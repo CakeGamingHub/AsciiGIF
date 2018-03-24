@@ -14,8 +14,9 @@ class AsciiGif:
     def DrawLogic(self):
         for i in self.Frames:
             print(i)
-            exec(self.ClearCommand)
             time.sleep(1 / self.FrameRate)
+            exec(self.ClearCommand)
+
 
     def Draw(self, Iterations):
         CurrentIteration = 1
